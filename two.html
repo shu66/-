@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>第一个静态网址</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image:url('https://img.tukuppt.com/bg_grid/00/15/30/JU8Zfm2Jra.jpg!/fh/350');
+    background-repeat:repeat;
+    color: white;
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 让一行中的格子平均分配 */
+.pingjun{
+    column-count: 4;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* 翻页样式 */
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    }
+
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .previous {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    
+    .next {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>第一个静态网页实例</h1>
+</div>
+
+<div class="navbar">
+  <a href="https://www.baidu.com/">百度搜索</a>
+  <a href="https://www.google.com/">谷歌搜索</a>
+  <a href="https://www.sogou.com/">搜狗搜索</a>
+  <a href="https://www.github.com/">github</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>关于我</h2>
+      <h4>我的照片:</h4>
+      <img src="https://s1.328888.xyz/2022/08/13/TbNnC.jpg" class="fakeimg" style="height: 300px;">
+      <p>关于我的介绍..</p>
+      <p>我叫黄磊,毕业于xx学院xx专业,今年xx岁,经过大学一年的学习,已经具有较强的专业理论知识基础.<br>大学阶段本人努力学习专业知识和课外知识，学习成绩优秀，多次获奖学金，已过cet4和cet6，计算机一、二、三级，考取中级秘书证、普通话二乙等证书。本人在各个活动中不断锻炼自己，大一任校学生会学习部干事、院学生会信息部干事。<br>另外本人还积极参加各项活动，在学院辩论赛中荣获团体第一名，学院团知识竞赛中荣获二等奖，学院迎校庆征文比赛中获二等奖。本人注重劳逸结合，学习之余积极参加各项活动，体育成绩优秀。也曾两次参加三下乡暑期活动，是校三下乡先进个人之一。</p>
+      <h3>我的更多内容</h3>
+      <div class="fakeimg">
+      <img src="https://s1.328888.xyz/2022/07/05/c7BB.jpg"  style="height:200px; width: 300px;;"></div><br>
+      <p>暂无</p>
+</div>
+  <div class="main">
+      <h2>动物分享</h2>
+      <h5>一级濒危物种</h5>
+      <img src="https://s1.328888.xyz/2022/08/13/TB7mE.jpg" class="fakeimg" style="height:350px;">
+      <p>动物简介</p>
+      <p>川金丝猴，别名狮子鼻猴、仰鼻猴、金绒猴、兰面猴、洛克安娜猴、长尾子、线子、线狨、马狨、果然兽、果然狨、金线狨，属灵长目、猴科、仰鼻猴属。毛质柔软，为中国特有的珍贵动物，群栖高山密林中，为国家一级保护动物。主要天敌有豺、狼、金猫、豹、雕、鹫、鹰等。<br>
+        
+        由于川金丝猴的栖息地与大熊猫重叠，为保护大熊猫建立的保护区开展保护工作较早，对群众的宣传教育也开展的较早，所以随着保护区的建立，许多地方的川金丝猴种群得到了恢复，相比与其他两种仰鼻属的猴子，川金丝猴的数量最多。随着全面禁止砍伐天然林，川金丝猴的栖息地得到了保护</p>
+      <br>
+      <h2>美食分享</h2>
+      <h5>江西美食</h5>
+      <img src="https://s1.328888.xyz/2022/08/13/TBZmo.webp" class="fakeimg" style="height:350px;">
+      <p>美食介绍</p>
+      <p>瓦罐汤可谓是江西最著名的小吃之一，也是少有的能够走出江西的小吃美食，只是很可惜瓦罐汤能够走出江西其实是福建人的功劳。<br>
+
+        在福建人开的沙县小吃餐馆里就有瓦罐汤，便是跟江西南昌人学的做法，在江西南昌，瓦罐汤可谓是当地最具特色的美食小吃，每天早上，大街小巷的早餐店里一定会有瓦罐汤这个美食。<br>
+        
+        当地人更是从小吃到大，一碗瓦罐汤下肚，才能开启一天元气满满的工作。</p>
+  </div>
+</div>
+
+
+<p style="text-align: center"><a href="one.html" class="previous">&laquo; 上一页</a>
+<a href="index.html" class="next" >下一页 &raquo;</a></p>
+
+
+<div class="footer">
+  <h2>友情链接</h2>
+  <a href="https://www.runoob.com/html/html-tutorial.html">菜鸟教程</a>
+  <a href="https://space.bilibili.com/34786453">b站康文昌</a>
+  <a href="https://host.retiehe.com/">代码托管平台</a>
+</div>
+
+</body>
+</html>
